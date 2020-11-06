@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ('../template/head', { title: title  } ); %>
+    </head>
+    <body>
+
+        <header>
+            <%- include ('../template/header', { username: username , configHeader:configHeader, currpage : currpage  }); %>
+        </header>
+
+        <main>
+            <div class="container" >
+                <div class="jumbotron">
+                    <audio controls autoplay loop hidden="true">
+                        <source src="/audio/pokemon.mp3"  type="audio/mpeg">          
+                    </audio>
+                    <h1>
+                        ATN Shop</h1>
+                    
+                    <p>ATN is a Vietnamese company which is selling toys to teenagers in many provinces all over Vietnam. This company sell Pokemon Figure.</p>
+                    <div style="text-align: center;"  >
+                        <img src="/images/Allpokemon.png" width="100%",height="100%" />
+                
+                      
+                    </div>
+
+                    <p>
+                      <a class="btn btn-lg btn-primary" href="/product/view" role="button">View Catalog »</a>
+                    </p>
+                  </div>
+            </div>
+        </main>
+          
+        
+        <%- include ('../template/footer'); %>
+        
+
+    </body>
+
+</html> 
